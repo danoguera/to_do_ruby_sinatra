@@ -1,0 +1,19 @@
+<h4>Tareas Realizadas</h4>
+<% if @list.empty? %>
+	<p>No has adicionado tareas aún</p>
+<% else %>
+	<ul>
+		<% @list.each do |item| %>
+			<li>
+				<% if item["done"] %>
+					<p><%= item["title"] %></p>		
+					<form action="/delete" method="post">
+						<input type="hidden" name="id" value="<%= item["id"] %>">
+						<input class="btn btn-danger" type="submit" value="Borrar">
+					</form>
+				<% end %>
+			</li>
+			<br><br>
+		<% end %>
+	</ul>	
+<% end %>

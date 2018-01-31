@@ -1,0 +1,28 @@
+h2{
+	text-align: center;
+}
+
+h3{
+	text-align: left;
+}
+
+ul{
+	list-style-type: circle;
+	text-align: left;
+}
+
+li{
+	display: block;
+}
+
+form{
+	float: left;
+}
+
+input[type="submit"]{
+	margin: 0 7px 0 0;
+}
+
+input{
+	margin-bottom: 2em;
+}
